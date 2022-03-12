@@ -53,13 +53,13 @@ fun User(name: String, email: String) {
         Row(
             verticalAlignment = Alignment.CenterVertically,
         ) {
+            Spacer(modifier = Modifier.padding(all= 8.dp))
             Image(
                 painter = painterResource(id = R.drawable.arab_person_24916754),
                 contentDescription = "",
                 modifier = Modifier
-                    .size(40.dp)
+                    .size(60.dp)
                     .clip(CircleShape)
-                    .padding(start = 8.dp)
             )
             Column(modifier = Modifier.padding(all = 16.dp)) {
                 Text(text = "Hello $name!")
